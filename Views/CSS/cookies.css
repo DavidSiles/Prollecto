@@ -1,0 +1,78 @@
+/*Cookies*/
+.cookie-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Ancho del banner */
+    height: 300px; /* Altura del banner */
+    background-color: #30303b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0; /* Inicialmente oculto */
+    animation: fadeIn 0.5s forwards; /* Animación de aparición */
+}
+
+.cookie-container p {
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+}
+
+.cookie-container a {
+    color: rgb(226, 146, 96);
+    text-decoration: underline;
+}
+
+.cookie-container a:hover {
+    color: rgb(220, 181, 157);
+}
+
+.cookie-container .cookie-btn {
+    background-color: #d73717;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cookie-container .cookie-btn1{
+    background-color: #d73717;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cookie-container .cookie-btn:hover {
+    background-color: #c89488;
+}
+.cookie-container .cookie-btn1:hover {
+    background-color: #c89488;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

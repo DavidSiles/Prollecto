@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0;
+    font-size: 2rem;
+    background-size: 200px 800px;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(61, 93, 121);
+    text-align: left;
+    color: white; /* Texto blanco */
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white; /* Texto blanco */
+    margin-bottom: 20px;
+}
+
+.error {
+    text-align: center;
+    font-size: 70px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+form {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    color: white; /* Texto blanco */
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+label, input, button {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: orange;
+    padding: 10px 70px; 
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 30px; 
+    align-self: center;
+    color: white; /* Texto blanco */
+}
+
+.error {
+    color: red;
+}
+
+.errorMessage {
+    font-size: 25px;
+    color: red;
+}
+
+#changeRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonChangeRegister {
+    background-color: orange;
+    color: white; /* Texto blanco */
+    padding: 15px 100px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#buttonChangeRegister:hover {
+    background-color: darkorange; 
+}
+#buttonRegister:hover{
+    background-color: darkorange; 
+}
+
+@media (max-width: 800px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-column {
+        align-items: flex-start;
+    }
+
+    #formReg button {
+        align-self: center;
+    }
+}

@@ -1,0 +1,94 @@
+form, body, label, input, button, div, h2 {
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: static;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-color: rgb(61, 93, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+#box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form {
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+input {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 59px;
+}
+
+label, input, button {
+    font-size: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#button1 {
+    display: inline-block;
+    justify-content: center;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    align-items: center; 
+    padding: 10px 59px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+img {
+    height: auto;
+    margin-left: 150px;
+    max-width: 300px;
+    max-height: 300px;
+    flex-wrap: wrap;
+    border-radius: 200px;
+}
+
+.error {
+    color: red;
+}
+
+.errorMessage {
+    font-size: 25px;
+    color: red;
+}

@@ -1,0 +1,214 @@
+body,header,form,div,h1,h2,h3,h4,h5,h6,button,img{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+}
+html,body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(61, 93, 121);
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    overflow-x: hidden;
+}
+header{
+    flex-direction: column;
+    background-color: orange;
+    height: auto;
+    max-height: 100%;
+    position: absolute;
+    z-index: 999;
+    margin-left: 50px;
+}
+
+header > form{
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header button{
+    max-width: 100px;
+    height: auto;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: darkorange;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3);
+}
+
+header button img {
+    max-width: 50px;
+    height: auto;
+    justify-content: center;
+}
+.menu{
+    padding: 10px;
+    z-index: 1000;
+}
+
+.menu > button > img{
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#index{
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+#filmImg1{
+    display: inline-block;
+    width: 100%;
+}
+
+#filmImg1 img {
+    width: 45%;
+    margin: 5px;
+    flex-shrink: 0;
+    display: none;
+}
+
+#filmImg1 img:nth-child(-n+2) {
+    display: block;
+}
+.populares{
+    display: inline-block;
+    width: 48%;
+}
+.populares > button{
+    display: inline-block;
+    width: 48%;
+}
+h3{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-left: 300px;
+    margin-bottom: 30px;
+}
+#filmImg2{
+    display: inline-block;
+    width: 100%;
+    margin-left: 90px;
+}
+#filmImg3{
+    display: inline-block;
+    width: 100%;
+    margin-left: 90px;
+}
+.slider{
+    display: inline-block;
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 1800px) {
+    body, form, div, h1, h2, h3, h4, h5, h6, button, img {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    html, body {
+        font-family: Arial, sans-serif;
+        margin: 0; 
+        padding: 0;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color: rgb(61, 93, 121);
+        text-align: center;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    form {
+        margin: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    button {
+        max-width: 900px;
+        height: auto;
+        justify-content: center;
+    }
+
+    button img {
+        max-width: 700px;
+        height: auto;
+        justify-content: center;
+    }
+
+    .menu {
+        padding: 5px;
+        z-index: 1000;
+    }
+
+    .menu > button > img {
+        margin: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #index {
+        margin: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    #filmImg1, #filmImg2, #filmImg3 {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .populares {
+        display: inline-block;
+        width: 60%;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .populares > button {
+        display: inline-block;
+        width: 80%;
+        margin-top: 60px;
+    }
+
+    h3 {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .slider {
+        display: inline-block;
+        width: 20%;
+    }
+}

@@ -1,0 +1,88 @@
+body,header,form,div,h1,h2,h3,h4,h5,h6,button,img{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(61, 93, 121);
+    text-align: center;
+    padding-top: 30px;
+}
+header{
+    flex-direction: column;
+    background-color: black;
+    height: auto;
+    max-height: 100%;
+    position: fixed;
+    margin-left: 30px;
+}
+
+header > form{
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header button{
+    max-width: 100px;
+    height: auto;
+    justify-content: center;
+}
+header button img {
+    max-width: 50px;
+    height: auto;
+    justify-content: center;
+}
+.menu{
+    padding: 10px;
+    z-index: 1000;
+}
+
+.menu > button > img{
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#index{
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+}
+#filmImg1{
+    display: inline-block;
+    width: 100%;
+}
+.populares{
+    display: inline-block;
+    width: 48%;
+}
+.populares > button{
+    display: inline-block;
+    width: 48%;
+}
+h3{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-left: 300px;
+    margin-bottom: 30px;
+}
+#filmImg2{
+    display: inline-block;
+    width: 100%;
+}
+.slider{
+    display: inline-block;
+    width: 15%;
+}
